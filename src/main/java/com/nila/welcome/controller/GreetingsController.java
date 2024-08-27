@@ -10,7 +10,7 @@ import java.util.Random;
 @RestController
 public class GreetingsController {
 
-    @GetMapping("/greet")
+    @GetMapping("/")
     public String getGreeting() {
         return "Hello!!!";
     }
