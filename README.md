@@ -4,6 +4,12 @@ Endpoints available:
 /quote - Random quote
 /story - Random story
 
+Steps to clone repo:
+1. git clone https://github.com/KaviyaMani/random-quotes.git or download it as zip and extract
+2. Open the project in Intellij
+3. Once maven resolved dependencies. Run mvn install
+4. This will create jar under target folder
+
 Dockerize the application:
 1. docker build -t repo/welcome:latest .
 2. docker push repo/welcome
