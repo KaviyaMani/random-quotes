@@ -6,6 +6,7 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
+import java.util.random.RandomGenerator;
 
 @RestController
 public class GreetingsController {
@@ -56,6 +57,16 @@ public class GreetingsController {
 
         Random rand = new Random();
         return story.get(rand.nextInt(story.size()));
+    }
+
+    @GetMapping("/number")
+    public String getRandomNumber() {
+        Random rand = new Random();
+        double randDouble = rand.nextDouble();
+        int randInt = rand.nextInt();
+
+        double mathRandom = Math.random();
+        return "Your random number is: "+randDouble+" or "+randInt+" or "+mathRandom;
     }
 
 }
